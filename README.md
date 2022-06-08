@@ -1,4 +1,4 @@
-# ☄️ README.md from [@eduym17](https://github.com/eduym17)
+# ☄️ Portfolio from [@eduym17](https://github.com/eduym17)
 <img width="1247" alt="image" src="https://user-images.githubusercontent.com/96452418/172680077-1d66ba66-ef28-40c9-ad97-905e387b392c.png">
 
 <div align=center>
