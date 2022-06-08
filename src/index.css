@@ -15,6 +15,18 @@ html {
   }
 }
 
+@layer components {
+  .containerFull {
+    @apply w-full flex flex-col items-center
+  }
+  .containerContent {
+    @apply w-full max-w-6xl flex flex-col items-center
+  }
+  .containerScreen {
+    @apply flex flex-col items-center justify-between min-h-screen w-full
+  }
+}
+
 @font-face {
   font-family: 'Poppins';
   src: local('Poppins-Thin'), url(./assets/fonts/Poppins-Thin.ttf) format('ttf');
