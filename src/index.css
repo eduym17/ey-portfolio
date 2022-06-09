@@ -16,7 +16,7 @@ html {
 }
 
 @layer components {
-  .containerFull {
+  .containerFullWidth {
     @apply w-full flex flex-col items-center
   }
   .containerContent {

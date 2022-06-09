@@ -9,7 +9,8 @@ module.exports = {
       },
       colors: {
         dev: {
-          night: '#111123',
+          night: '#090A1A',
+          nightSoft: '#171B3C',
           blue: '#251791',
           aqua: '#33FDD8',
           purple: '#45108A',
