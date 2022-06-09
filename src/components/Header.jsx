@@ -38,12 +38,15 @@ const Header = () => {
         </a>
         <button
           type="button"
-          className={`md:hidden transition-all duration-1000 absolute right-3 top-6 rounded-sm ${menu ? null : ' py-1 pl-3 pr-1 bg-dev-violet'}`}
+          className={`md:hidden transition-all duration-1000 absolute right-3 top-6 rounded-md ${menu ? null : ' py-1 pl-3 pr-1 bg-dev-violet'}`}
           onKeyUp={(e) => enterHandlesMenu(e)}
           onBlur={(e) => blurHandler(e)}
         >
           <div className="flex flex-row gap-6 font-medium">
             <div className={`${menu ? 'hidden' : 'flex flex-col items-start gap-1'}`}>
+              <a href="/#aboutMe" className="hover:text-dev-aqua">
+                About me
+              </a>
               <a href="/#projects" className="hover:text-dev-aqua">
                 Projects
               </a>
@@ -82,13 +85,43 @@ const Header = () => {
           </div>
         </button>
         <div className="hidden md:flex gap-8 font-medium">
-          <a href="/#projects" className="hover:text-dev-aqua">Projects</a>
-          <a href="/#stack" className="hover:text-dev-aqua">My stack</a>
-          <a href="/#contact" className="hover:text-dev-aqua">Contact</a>
+          <a
+            href="/#aboutMe"
+            className="hover:text-dev-aqua"
+          >
+            About me
+          </a>
+          <a
+            href="/#projects"
+            className="hover:text-dev-aqua"
+          >
+            Projects
+          </a>
+          <a
+            href="/#stack"
+            className="hover:text-dev-aqua"
+          >
+            My stack
+          </a>
+          <a
+            href="/#contact"
+            className="hover:text-dev-aqua"
+          >
+            Contact
+          </a>
           <div className="flex items-center gap-1 hover:text-dev-aqua">
-            <a href="/">Resume</a>
-            <svg width="15px" height="15px" viewBox="0 0 24 24">
-              <path fill="currentColor" d="m12 20l-8-8l1.4-1.425l5.6 5.6V4h2v12.175l5.6-5.6L20 12Z" />
+            <a href="/">
+              Resume
+            </a>
+            <svg
+              width="15px"
+              height="15px"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="m12 20l-8-8l1.4-1.425l5.6 5.6V4h2v12.175l5.6-5.6L20 12Z"
+              />
             </svg>
           </div>
         </div>
