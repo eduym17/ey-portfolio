@@ -6,11 +6,13 @@ const Footer = () => (
   <>
     <div className="containerContent min-w-[250px] flex flex-col justify-between items-center p-4 md:px-6 md:py-7">
       <div className="flex items-center justify-between w-full">
-        <img
-          src={iconLogo}
-          alt="Asteroidev logof"
-          className="h-10"
-        />
+        <a href="/">
+          <img
+            src={iconLogo}
+            alt="Asteroidev logof"
+            className="h-10"
+          />
+        </a>
         <div className="flex items-center gap-4 md:gap-6">
           <a
             href="https://github.com/eduym17"
