@@ -1,7 +1,7 @@
 import propTypes from 'prop-types';
 
 const TitleSpaceWordMain = ({ title, magicWord, customClass }) => (
-  <p className={`w-[90%] font-semibold text-4xl md:w-3/6 ${customClass}`}>
+  <p className={`w-[90%] font-semibold text-4xl md:w-full md:text-6xl lg:text-7xl ${customClass}`}>
     {title.split(' ').map((word) => (
       word === magicWord
         ? <span key={word} className="text-transparent bg-clip-text bg-lightGradient">{`${magicWord}`}</span>

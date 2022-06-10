@@ -84,7 +84,7 @@ const Header = () => {
             </svg>
           </div>
         </button>
-        <div className="hidden md:flex gap-8 font-medium">
+        <div className="hidden md:flex gap-5 font-medium">
           <a
             href="/#aboutMe"
             className="hover:text-dev-aqua"
