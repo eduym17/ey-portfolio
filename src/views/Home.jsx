@@ -220,7 +220,7 @@ const Home = () => (
     <div className="containerFullWidth bg-dev-blue">
       <div
         id="contact"
-        className="containerContent pt-12 pb-14"
+        className="containerContent pt-12 pb-14 md:py-16 lg:py-20"
       >
         <div className="w-[90%] flex flex-col items-start">
           <div className="w-full flex flex-col md:flex-row md:justify-center md:gap-4">

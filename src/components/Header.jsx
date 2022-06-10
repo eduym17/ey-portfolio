@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { iconLogo, iconImago } from './utils/icons';
+import CVEYM from '../assets/docs/CV-EYM.pdf';
 
 const Header = () => {
   const [menu, setMenu] = useState(true);
@@ -57,7 +58,7 @@ const Header = () => {
                 Contact
               </a>
               <div className="flex items-center gap-1 hover:text-dev-aqua">
-                <a href="/">
+                <a href={CVEYM} download>
                   Resume
                 </a>
                 <svg width="15px" height="15px" viewBox="0 0 24 24">
@@ -110,7 +111,7 @@ const Header = () => {
             Contact
           </a>
           <div className="flex items-center gap-1 hover:text-dev-aqua">
-            <a href="/">
+            <a href={CVEYM} download>
               Resume
             </a>
             <svg
