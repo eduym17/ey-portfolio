@@ -30,7 +30,7 @@ const Home = () => (
           <div className="hidden md:flex items-start w-full pt-14 text-lg">
             <a
               href="/#contact"
-              className="flex items-center gap-2 border-b-2 hover:text-dev-aqua hover:border-dev-aqua"
+              className="flex items-center gap-2 border-b-2 hover:text-dev-aqua hover:border-dev-aqua lg:text-xl"
             >
               <p>Contact</p>
               <svg
@@ -223,20 +223,24 @@ const Home = () => (
         className="containerContent pt-12 pb-14"
       >
         <div className="w-[90%] flex flex-col items-start">
-          <TitleSpaceWordGeneral
-            title="Do you have a brilliant idea in mind?"
-            customClass="leading-none"
-          />
+          <div className="w-full flex flex-col md:flex-row md:justify-center md:gap-4">
+            <div className="w-full flex flex-col md:w-2/5 md:items-start">
+              <TitleSpaceWordGeneral
+                title="Do you have a brilliant idea in mind?"
+                customClass="leading-none md:mt-2 lg:text-lg"
+              />
+              <TitleAquaWordGeneral
+                title="Contact  me!"
+                magicWord="Contact"
+                customClass="whitespace-nowrap"
+              />
+            </div>
+            <FormContact customClass="my-6 md:w-1/2 md:my-0" />
+          </div>
           <TitleAquaWordGeneral
-            title="Contact  me!"
-            magicWord="Contact"
-            customClass=""
-          />
-          <FormContact customClass="my-6" />
-          <TitleSpaceWordGeneral
-            title="I'll be happy to hear from you!"
+            title="I'll be happy  to hear from you!"
             magicWord="happy"
-            customClass="leading-none text-center text-xl"
+            customClass="leading-none text-center text-xl md:mt-10 md:text-2xl"
           />
         </div>
       </div>

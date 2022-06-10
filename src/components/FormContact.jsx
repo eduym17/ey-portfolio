@@ -5,21 +5,21 @@ const FormContact = ({ customClass }) => {
   const [state, handleSubmit] = useForm('mwkyzqaz');
   if (state.succeeded) {
     return (
-      <p className="w-full font-semibold text-2xl text-center py-14">
-        Let&apos;s
-        <span className="text-transparent bg-clip-text bg-lightGradient"> do </span>
-        it!
+      <p className="w-full font-semibold text-2xl text-center py-14 md:w-1/2 md:py-0 md:self-center">
+        ☄️ Houston, we have a
+        <span className="text-transparent bg-clip-text bg-dev-aqua"> message</span>
+        !
       </p>
     );
   }
   return (
-    <form onSubmit={handleSubmit} className={`flex flex-col items-end ${customClass}`}>
+    <form onSubmit={handleSubmit} className={`flex flex-col items-end text-sm md:text-base ${customClass}`}>
       <input
         type="text"
         name="Name"
         id="name"
         placeholder="Name*"
-        className="bg-transparent border-b-2 w-full placeholder-dev-white font-extralight text-sm my-1"
+        className="bg-transparent border-b-2 w-full placeholder-dev-white font-extralight my-1 focus:outline-none"
         required
       />
       <ValidationError
@@ -32,7 +32,7 @@ const FormContact = ({ customClass }) => {
         name="E-mail"
         id="mail"
         placeholder="E-mail*"
-        className="bg-transparent border-b-2 w-full placeholder-dev-white font-extralight text-sm my-1"
+        className="bg-transparent border-b-2 w-full placeholder-dev-white font-extralight my-1 focus:outline-none"
         required
       />
       <ValidationError
@@ -45,8 +45,9 @@ const FormContact = ({ customClass }) => {
         id="message"
         cols="30"
         rows="1"
-        placeholder="Leave a message!"
-        className="bg-transparent border-b-2 w-full placeholder-dev-white font-extralight text-sm my-1 resize-y h-6"
+        placeholder="Leave a message!*"
+        className="bg-transparent border-b-2 w-full placeholder-dev-white font-extralight my-1 resize-y h-6 md:h-7 focus:outline-none"
+        required
       />
       <ValidationError
         prefix="Mensaje"
