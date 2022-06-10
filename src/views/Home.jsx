@@ -1,8 +1,10 @@
-import { asteroid, newBody, inSitu } from '../components/utils/images';
+import {
+  asteroid, newBody, inSitu, devStore, pokedex,
+} from '../components/utils/images';
 import {
   TitleSpaceWordMain, TitleSpaceWordGeneral, TitleAquaWordGeneral, ClickToTop, ProjectCard,
 } from '../components';
-import { infoInSitu } from '../components/utils/texts';
+import { infoDevStore, infoInSitu, infoPokedex } from '../components/utils/texts';
 
 const Home = () => (
   <>
@@ -94,8 +96,33 @@ const Home = () => (
             title={infoInSitu.title}
             description={infoInSitu.description}
             stack={infoInSitu.stack}
-            website={infoInSitu.website}
-            disabled={infoInSitu.isWebsiteDisabled}
+            linkWebsite={infoInSitu.linkWebsite}
+            isWebDisabled={infoInSitu.isWebDisabled}
+            linkRepo={infoInSitu.linkRepo}
+            isRepoDisabled={infoInSitu.isRepoDisabled}
+            customClass="mt-8"
+          />
+          <ProjectCard
+            image={devStore}
+            title={infoDevStore.title}
+            description={infoDevStore.description}
+            stack={infoDevStore.stack}
+            linkWebsite={infoDevStore.linkWebsite}
+            isWebDisabled={infoDevStore.isWebDisabled}
+            linkRepo={infoDevStore.linkRepo}
+            isRepoDisabled={infoDevStore.isRepoDisabled}
+            customClass="mt-6"
+          />
+          <ProjectCard
+            image={pokedex}
+            title={infoPokedex.title}
+            description={infoPokedex.description}
+            stack={infoPokedex.stack}
+            linkWebsite={infoPokedex.linkWebsite}
+            isWebDisabled={infoPokedex.isWebDisabled}
+            linkRepo={infoPokedex.linkRepo}
+            isRepoDisabled={infoPokedex.isRepoDisabled}
+            customClass="my-6"
           />
         </div>
       </div>
