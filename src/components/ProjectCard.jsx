@@ -4,22 +4,22 @@ const ProjectCard = ({
   image, title, description, stack, linkWebsite, isWebDisabled, linkRepo, isRepoDisabled,
   customClass,
 }) => (
-  <div className={`w-full flex flex-col items-center bg-dev-nightSoft border-b-4 rounded-t-md border-dev-violet hover:border-dev-aqua ${customClass}`}>
+  <div className={`w-full max-w-md flex flex-col items-center bg-dev-nightSoft border-b-4 rounded-t-md border-dev-violet hover:border-dev-aqua ${customClass}`}>
     <img
       src={image}
       alt={image}
       className="rounded-t-md w-full"
     />
-    <p className="w-full text-center font-medium pt-4">
+    <p className="w-full text-center font-medium pt-4 lg:text-lg">
       {title}
     </p>
-    <p className="w-full px-2 text-center font-extralight text-sm pt-4">
+    <p className="w-full px-2 text-center font-extralight text-sm pt-4 lg:text-base">
       {description}
     </p>
-    <p className="w-[90%] text-center font-medium text-sm pt-4">
+    <p className="w-[90%] text-center font-medium text-sm pt-4 lg:text-base">
       {stack}
     </p>
-    <div className="flex items-center justify-center gap-4 py-6 w-full">
+    <div className="flex items-center justify-center gap-4 py-6 w-full md:flex-col lg:flex-row lg:text-base">
       <button
         type="button"
         className={`py-1.5 w-[130px] rounded-md font-medium text-dev-gray-20 ${isWebDisabled ? 'cursor-not-allowed bg-dev-gray-40' : 'bg-dev-violet hover:bg-lightGradient hover:text-dev-white'}`}

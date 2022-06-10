@@ -20,7 +20,7 @@ const Home = () => (
       >
         <div className="w-[90%] md:w-2/5">
           <p className="w-full leading-none font-extralight md:w-full md:text-lg">
-            Welcome to my porfolio
+            Welcome to my portfolio
           </p>
           <TitleSpaceWordMain
             title="Ready to reach the asteroids ?"
@@ -115,49 +115,51 @@ const Home = () => (
           <TitleSpaceWordGeneral
             title="My recent projects"
             magicWord="projects"
-            customClass="text-3xl"
+            customClass="text-3xl md:text-4xl"
           />
-          <ProjectCard
-            image={inSitu}
-            title={infoInSitu.title}
-            description={infoInSitu.description}
-            stack={infoInSitu.stack}
-            linkWebsite={infoInSitu.linkWebsite}
-            isWebDisabled={infoInSitu.isWebDisabled}
-            linkRepo={infoInSitu.linkRepo}
-            isRepoDisabled={infoInSitu.isRepoDisabled}
-            customClass="mt-8"
-          />
-          <ProjectCard
-            image={devStore}
-            title={infoDevStore.title}
-            description={infoDevStore.description}
-            stack={infoDevStore.stack}
-            linkWebsite={infoDevStore.linkWebsite}
-            isWebDisabled={infoDevStore.isWebDisabled}
-            linkRepo={infoDevStore.linkRepo}
-            isRepoDisabled={infoDevStore.isRepoDisabled}
-            customClass="mt-6"
-          />
-          <ProjectCard
-            image={pokedex}
-            title={infoPokedex.title}
-            description={infoPokedex.description}
-            stack={infoPokedex.stack}
-            linkWebsite={infoPokedex.linkWebsite}
-            isWebDisabled={infoPokedex.isWebDisabled}
-            linkRepo={infoPokedex.linkRepo}
-            isRepoDisabled={infoPokedex.isRepoDisabled}
-            customClass="mt-6"
-          />
-          <ClickToTop customClass="mt-3" />
+          <div className="w-full flex flex-col items-center md:flex-row md:items-start md:gap-3 md:mt-8">
+            <ProjectCard
+              image={devStore}
+              title={infoDevStore.title}
+              description={infoDevStore.description}
+              stack={infoDevStore.stack}
+              linkWebsite={infoDevStore.linkWebsite}
+              isWebDisabled={infoDevStore.isWebDisabled}
+              linkRepo={infoDevStore.linkRepo}
+              isRepoDisabled={infoDevStore.isRepoDisabled}
+              customClass="mt-6 md:mt-0"
+            />
+            <ProjectCard
+              image={inSitu}
+              title={infoInSitu.title}
+              description={infoInSitu.description}
+              stack={infoInSitu.stack}
+              linkWebsite={infoInSitu.linkWebsite}
+              isWebDisabled={infoInSitu.isWebDisabled}
+              linkRepo={infoInSitu.linkRepo}
+              isRepoDisabled={infoInSitu.isRepoDisabled}
+              customClass="mt-8 md:mt-0"
+            />
+            <ProjectCard
+              image={pokedex}
+              title={infoPokedex.title}
+              description={infoPokedex.description}
+              stack={infoPokedex.stack}
+              linkWebsite={infoPokedex.linkWebsite}
+              isWebDisabled={infoPokedex.isWebDisabled}
+              linkRepo={infoPokedex.linkRepo}
+              isRepoDisabled={infoPokedex.isRepoDisabled}
+              customClass="mt-6 md:mt-0"
+            />
+          </div>
+          <ClickToTop customClass="mt-3 md:mt-6" />
         </div>
       </div>
     </div>
     <div className="containerFullWidth">
       <div
         id="stack"
-        className="containerContent pt-8 pb-12"
+        className="containerContent pt-10 pb-12"
       >
         <div className="w-[90%] flex flex-col items-start">
           <TitleSpaceWordGeneral
