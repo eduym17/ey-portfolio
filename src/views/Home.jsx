@@ -3,8 +3,13 @@ import {
 } from '../components/utils/images';
 import {
   TitleSpaceWordMain, TitleSpaceWordGeneral, TitleAquaWordGeneral, ClickToTop, ProjectCard,
+  FormContact,
 } from '../components';
 import { infoDevStore, infoInSitu, infoPokedex } from '../components/utils/texts';
+import {
+  iconCSS3, iconExpress, iconFigma, iconGit, iconHTML5, iconIllustrator, iconJavaScript,
+  iconJest, iconMongoDB, iconNodeJS, iconPhotoshop, iconPostgreSQL, iconReact, iconVue,
+} from '../components/utils/icons';
 
 const Home = () => (
   <>
@@ -83,7 +88,7 @@ const Home = () => (
     <div className="containerFullWidth">
       <div
         id="projects"
-        className="containerContent py-12"
+        className="containerContent pt-12"
       >
         <div className="w-[90%] flex flex-col items-start">
           <TitleSpaceWordGeneral
@@ -122,15 +127,16 @@ const Home = () => (
             isWebDisabled={infoPokedex.isWebDisabled}
             linkRepo={infoPokedex.linkRepo}
             isRepoDisabled={infoPokedex.isRepoDisabled}
-            customClass="my-6"
+            customClass="mt-6"
           />
+          <ClickToTop customClass="mt-3" />
         </div>
       </div>
     </div>
-    <div className="containerFullWidth bg-violet-500">
+    <div className="containerFullWidth">
       <div
         id="stack"
-        className="containerContent py-12"
+        className="containerContent pt-8 pb-12"
       >
         <div className="w-[90%] flex flex-col items-start">
           <TitleSpaceWordGeneral
@@ -138,19 +144,68 @@ const Home = () => (
             magicWord="stack"
             customClass="text-3xl"
           />
+          <p className="w-full font-extralight text-sm text-justify whitespace-pre-line pt-2">
+            Brands | Products | Features | Websites
+          </p>
+          <TitleSpaceWordGeneral
+            title="Front End"
+            magicWord="Front"
+            customClass="text-center text-2xl mt-6"
+          />
+          <div className="w-full flex items-center justify-center gap-4 py-4">
+            <img src={iconHTML5} alt={iconHTML5} className="w-10" />
+            <img src={iconCSS3} alt={iconCSS3} className="w-10" />
+            <img src={iconJavaScript} alt={iconJavaScript} className="w-10" />
+            <img src={iconReact} alt={iconReact} className="w-10" />
+            <img src={iconVue} alt={iconVue} className="w-10" />
+          </div>
+          <TitleSpaceWordGeneral
+            title="Back End"
+            magicWord="Back"
+            customClass="text-center text-2xl mt-6"
+          />
+          <div className="w-full flex items-center justify-center gap-4 py-4">
+            <img src={iconNodeJS} alt={iconNodeJS} className="w-10" />
+            <img src={iconJest} alt={iconJest} className="w-10" />
+            <img src={iconExpress} alt={iconExpress} className="w-10" />
+            <img src={iconPostgreSQL} alt={iconPostgreSQL} className="w-10" />
+            <img src={iconMongoDB} alt={iconMongoDB} className="w-10" />
+          </div>
+          <TitleSpaceWordGeneral
+            title="My tools"
+            magicWord="tools"
+            customClass="text-center text-2xl mt-6"
+          />
+          <div className="w-full flex items-center justify-center gap-4 py-4">
+            <img src={iconGit} alt={iconGit} className="w-10" />
+            <img src={iconFigma} alt={iconFigma} className="w-10" />
+            <img src={iconIllustrator} alt={iconIllustrator} className="w-10" />
+            <img src={iconPhotoshop} alt={iconPhotoshop} className="w-10" />
+          </div>
+          <ClickToTop />
         </div>
       </div>
     </div>
     <div className="containerFullWidth bg-dev-blue">
       <div
         id="contact"
-        className="containerContent py-12"
+        className="containerContent pt-12 pb-14"
       >
         <div className="w-[90%] flex flex-col items-start">
+          <TitleSpaceWordGeneral
+            title="Do you have a brilliant idea in mind?"
+            customClass="leading-none"
+          />
           <TitleAquaWordGeneral
             title="Contact  me!"
             magicWord="Contact"
             customClass=""
+          />
+          <FormContact customClass="my-6" />
+          <TitleSpaceWordGeneral
+            title="I'll be happy to hear from you!"
+            magicWord="happy"
+            customClass="leading-none text-center text-xl"
           />
         </div>
       </div>
