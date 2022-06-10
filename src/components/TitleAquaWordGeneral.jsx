@@ -1,7 +1,7 @@
 import propTypes from 'prop-types';
 
 const TitleAquaWordGeneral = ({ title, magicWord, customClass }) => (
-  <p className={`w-full font-semibold text-3xl ${customClass}`}>
+  <p className={`w-full font-semibold text-3xl md:text-4xl ${customClass}`}>
     {title.split(' ').map((word) => (
       word === magicWord
         ? <span key={word} className="text-dev-aqua">{`${magicWord}`}</span>

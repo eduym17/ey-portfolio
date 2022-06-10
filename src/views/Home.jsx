@@ -76,30 +76,33 @@ const Home = () => (
     <div className="containerFullWidth bg-dev-blue">
       <div
         id="aboutMe"
-        className="containerContent py-12"
+        className="containerContent py-12 md:py-16"
       >
-        <div className="w-[90%] flex flex-col items-start">
-          <TitleAquaWordGeneral
-            title="Hi, friend !"
-            magicWord="friend"
-            customClass=""
-          />
-          <p className="w-full font-extralight text-sm text-justify whitespace-pre-line">
-            {`My name's Eduardo, I'm glad you're here! Please take a seat on this ship and let me tell you a little about myself:
+        <div className="w-[90%] flex flex-col items-start md:flex-row-reverse md:items-start md:gap-1">
+          <div className="flex flex-col items-start  md:w-1/2">
+            <TitleAquaWordGeneral
+              title="Hi, friend !"
+              magicWord="friend"
+              customClass=""
+            />
+            <p className="w-full font-extralight text-sm text-justify whitespace-pre-line md:text-base">
+              {`My name's Eduardo, I'm glad you're here! Please take a seat on this ship and let me tell you a little about myself:
 
-              For many years I looked for solutions to help our planet, which was facing a tough climate change. The solution seemed to be renewable energies but... We didn't expect an asteroid collision that destroyed our planet, just a few survived.
+                For many years I looked for solutions to help our planet, which was facing a tough climate change. The solution seemed to be renewable energies but... We didn't expect an asteroid collision that destroyed our planet, just a few survived.
 
-              I was heavily injured by the impact and died for a few minutes, but the geniuses from earth managed to implant my brain in a new body, so I had a new opportunity to change the universe's destiny.
+                I was heavily injured by the impact and died for a few minutes, but the geniuses from earth managed to implant my brain in a new body, so I had a new opportunity to change the universe's destiny.
 
-              In this second chance, the only thing I want to do is create good things for those few survivors. My new body was only new for me, it belonged to a member of a different race, and it had attached some peculiar skills that now allow me to read new languages in a faster way. I'll tell you about this later, first I want to show you my most recent projects.
-            `}
-          </p>
+                In this second chance, the only thing I want to do is create good things for those few survivors. My new body was only new for me, it belonged to a member of a different race, and it had attached some peculiar skills that now allow me to read new languages in a faster way. I'll tell you about this later, first I want to show you my most recent projects.
+              `}
+            </p>
+            <ClickToTop customClass="mt-2 hidden md:flex" />
+          </div>
           <img
             src={newBody}
             alt={newBody}
-            className="w-full pt-10 pb-2"
+            className="w-full pt-10 pb-2 md:w-1/2 md:py-0"
           />
-          <ClickToTop customClass="mt-2" />
+          <ClickToTop customClass="mt-2 md:hidden" />
         </div>
       </div>
     </div>
