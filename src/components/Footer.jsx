@@ -15,7 +15,7 @@ const Footer = () => (
         </a>
         <div className="flex items-center gap-4 md:gap-6">
           <a
-            href="https://github.com/eduym17"
+            href="https://www.linkedin.com/in/eduym17/"
             target="_blank"
             rel="noreferrer"
           >
@@ -26,7 +26,7 @@ const Footer = () => (
             />
           </a>
           <a
-            href="https://www.linkedin.com/in/eduym17/"
+            href="https://github.com/eduym17"
             target="_blank"
             rel="noreferrer"
           >

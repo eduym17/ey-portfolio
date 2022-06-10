@@ -152,7 +152,7 @@ const Home = () => (
               customClass="mt-6 md:mt-0"
             />
           </div>
-          <ClickToTop customClass="mt-3 md:mt-6" />
+          <ClickToTop customClass="mt-6" />
         </div>
       </div>
     </div>
@@ -165,47 +165,55 @@ const Home = () => (
           <TitleSpaceWordGeneral
             title="My stack"
             magicWord="stack"
-            customClass="text-3xl"
+            customClass="text-3xl md:text-4xl"
           />
-          <p className="w-full font-extralight text-sm text-justify whitespace-pre-line pt-2">
+          <p className="w-full font-extralight text-sm text-justify whitespace-pre-line pt-1 md:text-base lg:text-lg">
             Brands | Products | Features | Websites
           </p>
-          <TitleSpaceWordGeneral
-            title="Front End"
-            magicWord="Front"
-            customClass="text-center text-2xl mt-6"
-          />
-          <div className="w-full flex items-center justify-center gap-4 py-4">
-            <img src={iconHTML5} alt={iconHTML5} className="w-10" />
-            <img src={iconCSS3} alt={iconCSS3} className="w-10" />
-            <img src={iconJavaScript} alt={iconJavaScript} className="w-10" />
-            <img src={iconReact} alt={iconReact} className="w-10" />
-            <img src={iconVue} alt={iconVue} className="w-10" />
+          <div className="w-4/5 flex flex-col self-center">
+            <div className="flex flex-col items-center md:self-start">
+              <TitleSpaceWordGeneral
+                title="Front End"
+                magicWord="Front"
+                customClass="text-center text-2xl mt-6 md:text-3xl"
+              />
+              <div className="w-full flex items-center justify-center gap-4 py-4 md:gap-4">
+                <img src={iconHTML5} alt={iconHTML5} className="w-10" />
+                <img src={iconCSS3} alt={iconCSS3} className="w-10" />
+                <img src={iconJavaScript} alt={iconJavaScript} className="w-10" />
+                <img src={iconReact} alt={iconReact} className="w-10" />
+                <img src={iconVue} alt={iconVue} className="w-10" />
+              </div>
+            </div>
+            <div className="flex flex-col items-center">
+              <TitleSpaceWordGeneral
+                title="Back End"
+                magicWord="Back"
+                customClass="text-center text-2xl mt-6 md:mt-0 md:text-3xl"
+              />
+              <div className="w-full flex items-center justify-center gap-4 py-4 md:gap-4">
+                <img src={iconNodeJS} alt={iconNodeJS} className="w-10" />
+                <img src={iconJest} alt={iconJest} className="w-10" />
+                <img src={iconExpress} alt={iconExpress} className="w-10" />
+                <img src={iconPostgreSQL} alt={iconPostgreSQL} className="w-10" />
+                <img src={iconMongoDB} alt={iconMongoDB} className="w-10" />
+              </div>
+            </div>
+            <div className="flex flex-col items-center md:self-end">
+              <TitleSpaceWordGeneral
+                title="My tools"
+                magicWord="tools"
+                customClass="text-center text-2xl mt-6 md:mt-0 md:text-3xl"
+              />
+              <div className="w-full flex items-center justify-center gap-4 py-4 md:gap-4">
+                <img src={iconGit} alt={iconGit} className="w-10" />
+                <img src={iconFigma} alt={iconFigma} className="w-10" />
+                <img src={iconIllustrator} alt={iconIllustrator} className="w-10" />
+                <img src={iconPhotoshop} alt={iconPhotoshop} className="w-10" />
+              </div>
+            </div>
           </div>
-          <TitleSpaceWordGeneral
-            title="Back End"
-            magicWord="Back"
-            customClass="text-center text-2xl mt-6"
-          />
-          <div className="w-full flex items-center justify-center gap-4 py-4">
-            <img src={iconNodeJS} alt={iconNodeJS} className="w-10" />
-            <img src={iconJest} alt={iconJest} className="w-10" />
-            <img src={iconExpress} alt={iconExpress} className="w-10" />
-            <img src={iconPostgreSQL} alt={iconPostgreSQL} className="w-10" />
-            <img src={iconMongoDB} alt={iconMongoDB} className="w-10" />
-          </div>
-          <TitleSpaceWordGeneral
-            title="My tools"
-            magicWord="tools"
-            customClass="text-center text-2xl mt-6"
-          />
-          <div className="w-full flex items-center justify-center gap-4 py-4">
-            <img src={iconGit} alt={iconGit} className="w-10" />
-            <img src={iconFigma} alt={iconFigma} className="w-10" />
-            <img src={iconIllustrator} alt={iconIllustrator} className="w-10" />
-            <img src={iconPhotoshop} alt={iconPhotoshop} className="w-10" />
-          </div>
-          <ClickToTop />
+          <ClickToTop customClass="mt-4" />
         </div>
       </div>
     </div>
