@@ -12,8 +12,8 @@ export const infoDevStore = {
   title: 'devStore website',
   description: 'This website was created to simulate a real shopping cart where you can add or remove items from it.',
   stack: 'JavaScript • ReactJS • CSS3',
-  linkWebsite: '/',
-  isWebDisabled: true,
+  linkWebsite: 'https://eduym17.github.io/EY-shopping-cart/build/',
+  isWebDisabled: false,
   linkRepo: 'https://github.com/eduym17/EY-shopping-cart',
   isRepoDisabled: false,
 };
