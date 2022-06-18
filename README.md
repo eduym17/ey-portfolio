@@ -26,7 +26,7 @@ This is the repository for my personal portfolio.
 
 ## Live page
 
-[Live demo link not available yet](https://www.livedemo.com)
+[Eduardo Yañez | Portfolio](https://eduym.asteroi.dev/)
 
 ## Built with
 
