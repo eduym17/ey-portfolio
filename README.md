@@ -9,7 +9,7 @@
 
 ## About the project
 
-This is the repository for my personal portfolio.
+This is the repository for my personal portfolio. Using personal account.
 
 ## Roadmap
 
