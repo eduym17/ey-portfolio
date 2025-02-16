@@ -6,9 +6,9 @@ const FormContact = ({ customClass }) => {
   if (state.succeeded) {
     return (
       <p className="w-full font-semibold text-2xl text-center py-14 md:w-1/2 md:py-0 md:self-center">
-        ☄️ Houston, we have a
-        <span className="text-transparent bg-clip-text bg-dev-aqua"> message</span>
-        !
+        I'll contact you soon — faster than
+        <span className="text-transparent bg-clip-text bg-dev-aqua"> lightspeed</span>
+        ! 🚀
       </p>
     );
   }
