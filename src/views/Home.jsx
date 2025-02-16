@@ -192,7 +192,7 @@ const Home = () => (
                 magicWord="Automation"
                 customClass="text-center text-2xl mt-6 md:text-3xl"
               />
-              <div className="w-full flex items-center justify-center gap-4 py-4 md:gap-4">
+              <div className="w-full flex items-center justify-center gap-3 py-4 md:gap-4">
                 <img src={iconAzure} alt={iconAzure} className="w-10" />
                 <img src={iconAzureDevOps} alt={iconAzureDevOps} className="w-10" />
                 <img src={iconTerraform} alt={iconTerraform} className="w-10" />
@@ -203,7 +203,7 @@ const Home = () => (
               </div>
             </div>
           </div>
-          <div className="w-full flex flex-row place-content-evenly py-2">
+          <div className="w-full md:flex flex-row place-content-evenly py-2">
             <div className="flex flex-col items-center">
               <TitleSpaceWordGeneral
                 title="Monitoring"
