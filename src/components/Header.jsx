@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import { iconLogo, iconImago } from './utils/icons';
 import CVEYM from '../assets/docs/CV-EYM.pdf';
+import {
+  iconLinkedIn, iconGitHub,
+} from './utils/icons';
 
 const Header = () => {
   const [menu, setMenu] = useState(true);
@@ -125,6 +128,30 @@ const Header = () => {
               />
             </svg>
           </div>
+                  <div className="flex items-center gap-4 md:gap-6">
+          <a
+            href="https://www.linkedin.com/in/eduym17/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={iconLinkedIn}
+              alt={iconLinkedIn}
+              className="h-6 md:h-7"
+            />
+          </a>
+          <a
+            href="https://github.com/eduym17"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={iconGitHub}
+              alt={iconGitHub}
+              className="h-6 md:h-7"
+            />
+          </a>
+        </div>
         </div>
       </div>
     </>

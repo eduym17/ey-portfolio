@@ -1,5 +1,5 @@
 import {
-  iconLogo, iconLinkedIn, iconGitHub, iconTwitter,
+  iconLogo, iconLinkedIn, iconGitHub,
 } from './utils/icons';
 
 const Footer = () => (
@@ -36,13 +36,6 @@ const Footer = () => (
               className="h-6 md:h-7"
             />
           </a>
-          <a href="https://twitter.com/Edu_YM" target="_blank" rel="noreferrer">
-            <img
-              src={iconTwitter}
-              alt={iconTwitter}
-              className="h-6 md:h-7"
-            />
-          </a>
         </div>
       </div>
       <div className="flex flex-col w-full whitespace-nowrap md:flex-row-reverse md:items-end">
@@ -51,7 +44,7 @@ const Footer = () => (
             Eduardo Yañez Mejía
           </p>
           <p className="text-sm font-extralight">
-            Software Developer | UX/UI Designer
+            DevOps Engineer
           </p>
         </div>
         <div className="flex flex-col items-center text-xs font-extralight w-full whitespace-nowrap md:flex-row md:gap-3">
