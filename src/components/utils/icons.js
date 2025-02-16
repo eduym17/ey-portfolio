@@ -17,9 +17,20 @@ import iconPhotoshop from '../../assets/icons/icon-photoshop.svg';
 import iconPostgreSQL from '../../assets/icons/icon-postgresql.svg';
 import iconReact from '../../assets/icons/icon-react.svg';
 import iconVue from '../../assets/icons/icon-vuejs.svg';
+import iconAzureDevOps from '../../assets/icons/icon-azure-devops.svg';
+import iconAzure from '../../assets/icons/icon-azure.svg';
+import iconBash from '../../assets/icons/icon-bash.svg';
+import iconElasticSearch from '../../assets/icons/icon-elasticsearch.svg';
+import iconGitHubActions from '../../assets/icons/icon-github-actions.svg';
+import iconJenkins from '../../assets/icons/icon-jenkins.svg';
+import iconKibana from '../../assets/icons/icon-kibana.svg';
+import iconLogstash from '../../assets/icons/icon-logstash.svg';
+import iconPowerShell from '../../assets/icons/icon-powershell.svg';
+import iconTerraform from '../../assets/icons/icon-terraform.svg';
+import iconJava from '../../assets/icons/icon-java.svg';
 
 export {
   iconLogo, iconImago, iconLinkedIn, iconGitHub, iconTwitter, iconCSS3, iconExpress, iconFigma,
   iconGit, iconHTML5, iconIllustrator, iconJavaScript, iconJest, iconMongoDB, iconNodeJS,
-  iconPhotoshop, iconPostgreSQL, iconReact, iconVue,
+  iconPhotoshop, iconPostgreSQL, iconReact, iconVue, iconAzureDevOps, iconAzure, iconBash, iconElasticSearch, iconGitHubActions, iconJenkins, iconKibana, iconLogstash, iconPowerShell, iconTerraform, iconJava
 };
