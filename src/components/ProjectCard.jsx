@@ -10,7 +10,7 @@ const ProjectCard = ({
       alt={image}
       className="rounded-t-md w-full"
     />
-    <p className="w-full text-center font-medium pt-4 lg:text-lg">
+    <p className="w-full text-center font-bold pt-4 lg:text-lg">
       {title}
     </p>
     <p className="w-full px-2 text-center font-extralight text-sm pt-4 lg:text-base">
